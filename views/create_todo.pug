@@ -2,3 +2,6 @@ extends layout
 
 block content
     form(action = "/add" method = "post")
+        label(for="description") Description
+        input(type = "text" id = "description" name = "description")
+        button(type = "submit") Add Item
