@@ -75,7 +75,7 @@ router.get(`/edit/:id`, async function(req, res){
   })
   const item = results[0]
   console.log(results)
-  res.render('create_todo', {item})
+  res.render('edit', {item})
 })
 
 router.post('/edit/:id', async function(req, res){
